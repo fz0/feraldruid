@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN" data-era="legion">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081219">
+  <meta name="description" content="潜藏野性。魔兽世界野性德鲁伊主题页面。">
+  <title>Feral Druid · 潜藏野性</title>
+  <link rel="icon" href="img/feral-mark.svg" type="image/svg+xml">
+  <link rel="preload" href="img/moonlight/legion-v2.webp" as="image">
+  <link rel="preload" href="img/icons/spell_nature_invisibilty.jpg" as="image">
+  <link rel="stylesheet" href="css/moonlight.css">
+  <script src="js/moonlight.js" defer></script>
+</head>
+<body>
+  <div class="landscape" aria-hidden="true">
+    <div class="scene forest"></div>
+    <div class="scene cat-scene legion"></div>
+    <div class="scene cat-scene classic"></div>
+    <div class="scene-shade"></div>
+    <div class="motes" id="motes"></div>
+  </div>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="./" aria-label="Feral Druid 首页"><span class="brand-mark"><svg viewBox="0 0 30 26" fill="currentColor" aria-hidden="true"><path d="M9 3 4 19 8 15 12 2ZM16 2 10 23 15 17 19 1ZM23 4 18 21 22 16 26 3Z"/></svg></span><span>FERAL<span class="brand-light">DRUID</span></span></a>
+    </header>
+
+    <main class="main">
+      <section class="intro" aria-labelledby="headline">
+        <h1 id="headline">潜藏<span>野性</span></h1>
+        <div class="actions">
+          <button class="game-button prowl-button" id="prowl" aria-label="潜行" aria-pressed="false"><img id="prowl-icon" class="prowl-icon" src="img/icons/ability_druid_prowl.jpg" width="56" height="56" alt=""><span class="button-tooltip" id="prowl-tooltip" aria-hidden="true">潜行</span></button>
+        </div>
+      </section>
+
+      <div class="cat-interaction">
+        <span class="sleep-mark" aria-hidden="true"><i>z</i><i>z</i><i>Z</i></span>
+        <p class="cat-speech" id="cat-speech" role="status" aria-live="polite"></p>
+        <button class="cat-touch" id="cat-touch" aria-label="轻轻摸摸猫德，唤醒挂机中的猫"></button>
+      </div>
+    </main>
+
+    <div class="era-switch" role="group" aria-label="选择猫德外观">
+      <button class="game-button era-button" data-era="legion" aria-label="军团再临" aria-pressed="true"><span class="form-portrait portrait-legion" aria-hidden="true"></span><span class="button-tooltip" aria-hidden="true">军团再临</span></button>
+      <button class="game-button era-button" data-era="classic" aria-label="经典旧世" aria-pressed="false"><span class="form-portrait portrait-classic" aria-hidden="true"></span><span class="button-tooltip" aria-hidden="true">经典旧世</span></button>
+    </div>
+    <footer class="footer"><span>© <span id="year">2026</span> FERALDRUID </span></footer>
+  </div>
+</body>
+</html>
